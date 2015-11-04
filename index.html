@@ -8,24 +8,24 @@
     <body>
         Как, сударь, желает просматривать:
         <label for="whiteTheme">Старо</label>
-        <input type="radio" name="color" class="whiteTheme" checked>
+        <input type="radio" name="color" id="whiteTheme" checked>
         <label for="blackTheme">Богато</label>
-        <input type="radio" name="color" class="blackTheme">
+        <input type="radio" name="color" id="blackTheme">
         <div class="border"></div>
         Какой желает размер текста:
         <label for="bigFont">Большой</label>
-        <input type="radio" name="size" class="bigFont">
+        <input type="radio" name="size" id="bigFont">
         <label for="normalFont">Обычный</label>
-        <input type="radio" name="size" class="normalFont" checked>
+        <input type="radio" name="size" id="normalFont" checked>
         <label for="smallFont">Маленький</label>
-        <input type="radio" name="size" class="smallFont">
-        <div class="wraper">
+        <input type="radio" name="size" id="smallFont">
+        <div class="wrapper">
             <header class="header">
                 <div class="issue">Выпускается с 1999 года.</div>
                 <h1 lang="en" translate="no">Lenta.ru</h1>
-                <div class="curentTime">
+                <time class="curentTime" datetime="2015-11-29">
                     29 Ноября 2015
-                </div>
+                </time>
             </header>
             <section class="mainArticle">
                 <header>
@@ -248,7 +248,7 @@
             </section>
         </div>
         <footer>
-            <a href="http:/lenta.ru">Lenta.ru</a>
+            <a href="http://lenta.ru">Lenta.ru</a>
         </footer>
     </body>
 </html>
