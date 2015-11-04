@@ -1,18 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic);
-/*@import url(https://fonts.googleapis.com/css?family=PT+Serif+Caption);*/
-/*@import url(https://fonts.googleapis.com/css?family=Jura&subset=latin,cyrillic);*/
-/*@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700italic&subset=latin,cyrillic);*/
-/*@import url(https://fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,cyrillic);*/
-/*@import url(https://fonts.googleapis.com/css?family=Sigmar+One);*/
 @import url(https://fonts.googleapis.com/css?family=Playball);
 @import url(https://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic);
 @import url(https://fonts.googleapis.com/css?family=Bad+Script&subset=latin,cyrillic);
 
 body
 {
-    background-color: #fff8dc;
-    background: url("background.png") center top no-repeat,
-    url('paper_texture.jpg') 0 0 repeat;
+    margin: 0;
+    background-color: #FAEBD7;
 }
 
 h1 
@@ -48,38 +42,22 @@ p
 {
     font-family: 'Marck Script', cursive;
     font-size: 24px;
-    /*border-top: 7px double #000;*/
-    /*border-bottom: 7px double #000;*/
     text-align: center;
-    /*padding-bottom: 7px;*/
     border-bottom: 22px solid transparent;
     -moz-border-image: url("top.png") 568 30 repeat;
     -webkit-border-image: url("top.png") 568 30 repeat;
     border-image: url("top.png") 568 30 repeat;
 }
 
-
-div
-{
-        /* в Chrome-like браузерах и Firefox
-           свойство работает только с префиксами */
-        /*column-count: 2;*/
-        /*column-gap: 300px; растояние между столбцами*/
-        /*column-rule: 2px solid #0f0; /*разделитель*/
-}
-
 section
 {
     display: block;
 }
-.wraper 
+.wraper
 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
-    /*border-right: 7px double #000;*/
-    /*border-bottom: 2px solid #000;*/
 
     padding-bottom: 7px;
     border-bottom: 20px solid transparent;
@@ -91,15 +69,6 @@ section
 .mainArticle
 {
     width: calc(35vw - 20px);
-    /*min-width: 300px;*/
-    /*-moz-column-rule: 2px solid #000; */
-    /*-moz-column-gap: 10px;*/
-    /*float: left;*/
-}
-.mainArticle > article
-{
-    /*-moz-column-count: 2;*/
-    /*-moz-column-rule: 2px solid #000; */
 }
 
 .mainArticle h2
@@ -115,36 +84,23 @@ section
 .rightColomn
 {
     width: calc(24vw - 20px);
-    border-left: 20px solid transparent;
-    /*margin-top: 20px;*/
-    /*-moz-border-image:url("/files/4127/border.png") 30 30 repeat*/
-    -moz-border-image: url("bottom1.png") 33 370 repeat;
-    -webkit-border-image: url("bottom1.png") 33 370 repeat;
-    border-image: url("bottom1.png") 33 370 repeat;
-    /* padding-left: 7px;
-    border-left: 2px solid #000;*/
 }
 
 .articles
 {
     width: calc(37vw - 20px);
-    /*min-width: 600px;*/
-    /*float: right;*/
-
     padding-left: 7px;
     border-left: 20px solid transparent;
-    /*margin-top: 20px;*/
- /*-moz-border-image:url("/files/4127/border.png") 30 30 repeat*/
-    -moz-border-image: url("bottom1.png") 18 200 repeat;
-    -webkit-border-image: url("bottom1.png") 18 200 repeat;
-    border-image: url("bottom1.png") 18 200 repeat;
+    border-right: 20px solid transparent;
+    -moz-border-image: url("bottom1.png") 33 370 repeat;
+    -webkit-border-image: url("bottom1.png") 33 370 repeat;
+    border-image: url("bottom1.png") 33 370 repeat;
 }
 .articles > article
 {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
-    /*-moz-column-rule: 2px solid #000; */
 }
 
 article p:first-child::first-letter
@@ -153,10 +109,9 @@ article p:first-child::first-letter
     font-size: 30px;
 }
 
-header h2
+header
 {
-    /*column-span: 2;*/
-    /*Не работает в ff*/
+    width: 100%;
 }
 
 .imgEvro
@@ -166,7 +121,6 @@ header h2
     border-bottom: 2px solid #000;
     padding: 8px;
     border-radius: 20px;
-    /*column-span: all;*/
 }
 .imgNato
 {
@@ -186,10 +140,7 @@ footer
     display: block;
     text-align: center;
     font-size: 20px;
-    
     border-top: 12px solid transparent;
-    /*margin-top: 20px;*/
-    /*-moz-border-image:url("/files/4127/border.png") 30 30 repeat*/
     -moz-border-image: url("bottom2.png") 270 20 repeat;
     -webkit-border-image: url("bottom2.png") 270 20 repeat;
     border-image: url("bottom2.png") 270 20 repeat;
@@ -198,13 +149,103 @@ footer
 {
     border-top: 12px solid transparent;
     margin-top: 20px;
-    /*-moz-border-image:url("/files/4127/border.png") 30 30 repeat*/
     -moz-border-image: url("top2.png") 270 20 repeat;
     -webkit-border-image: url("top2.png") 270 20 repeat;
     border-image: url("top2.png") 270 20 repeat;
-    /*border-image: url(top1.png) 27 27 27 27 round;*/
-    /*border-image-left: url(border.png) 27 27 27 27 round*/
 }
+.issue
+{
+    margin: 10px;
+    writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl; 
+    float: right;
+    height: 150px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Marck Script', cursive;
+    color:  #696969;
+
+}
+.border
+{
+    display: inline-block;
+    width: 30px;
+}
+
+.blackTheme:checked ~ .wraper
+{
+    background: url("background.png") center top no-repeat;
+    background-color: #000;  
+}
+.blackTheme:checked ~ .wraper p,
+.blackTheme:checked ~ .wraper .curentTime
+{
+    color: #FFD700;
+}
+.blackTheme:checked ~ .wraper q
+{
+    color:  #FFA500;
+}
+.blackTheme:checked ~ .wraper h2
+{
+    color: #F4A460
+} 
+.blackTheme:checked ~ .wraper h1
+{
+    color: #FFFACD;
+    text-shadow: 4px 4px rgba(255 , 250 , 205, .4);
+} 
+
+.whiteTheme:checked ~ .wraper
+{
+    background-color: #fff8dc;
+    background: url("background.png") center top no-repeat,
+    url('paper_texture.jpg') 0 0 repeat;
+}
+
+.bigFont:checked ~ .wraper p
+{
+    font-size: 24px;
+}
+.bigFont:checked ~ .wraper .mainArticle h2
+{
+    font-size: 34px;
+}
+.bigFont:checked ~ .wraper q
+{
+    font-size: 24px;
+}
+.bigFont:checked ~ .wraper h2
+{
+    font-size: 26px;
+}
+.bigFont:checked ~ .wraper article p:first-child::first-letter
+{
+    font-size: 34px;
+}
+.smallFont:checked ~ .wraper p
+{
+    font-size: 16px;
+}
+.smallFont:checked ~ .wraper .mainArticle h2
+{
+    font-size: 26px;
+}
+.smallFont:checked ~ .wraper q
+{
+    font-size: 16px;
+}
+.smallFont:checked ~ .wraper h2
+{
+    font-size: 20px;
+}
+.smallFont:checked ~.wraper article p:first-child::first-letter
+{
+    font-size: 26px;
+}
+
+
 /*Здесь, при переносе скобки, начинает ругаться редактор*/
 @media all and (max-width: 800px) {
     .articles
@@ -214,13 +255,11 @@ footer
         -moz-column-count: 1;
         -webkit-column-count: 1;
         column-count: 1;
-        /*float: none;*/
     }
     .mainArticle
     {
         width: calc(100vw - 30px);
         min-width: 0px;
-        /*float: none;*/
     }
     .rightColomn
     {

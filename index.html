@@ -6,13 +6,27 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <header class="header">
-            <h1 lang="en" translate="no">Lenta.ru</h1>
-            <div class="curentTime">
-                29 Ноября 2015
-            </div>
-        </header>
+        Как, сударь, желает просматривать:
+        <label for="whiteTheme">Старо</label>
+        <input type="radio" name="color" class="whiteTheme" checked>
+        <label for="blackTheme">Богато</label>
+        <input type="radio" name="color" class="blackTheme">
+        <div class="border"></div>
+        Какой желает размер текста:
+        <label for="bigFont">Большой</label>
+        <input type="radio" name="size" class="bigFont">
+        <label for="normalFont">Обычный</label>
+        <input type="radio" name="size" class="normalFont" checked>
+        <label for="smallFont">Маленький</label>
+        <input type="radio" name="size" class="smallFont">
         <div class="wraper">
+            <header class="header">
+                <div class="issue">Выпускается с 1999 года.</div>
+                <h1 lang="en" translate="no">Lenta.ru</h1>
+                <div class="curentTime">
+                    29 Ноября 2015
+                </div>
+            </header>
             <section class="mainArticle">
                 <header>
                     <h2>
