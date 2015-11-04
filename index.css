@@ -9,7 +9,7 @@ body
     background-color: #FAEBD7;
 }
 
-h1 
+h1
 {
     font-family: 'Playball', cursive;
     font-size: 102px;
@@ -31,6 +31,14 @@ q
 {
     font-size: 20px;
     color: #2F3F3F;
+}
+blockquote
+{
+    font-family: 'Bad Script', cursive;
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: justify;
+    margin: 5px;
 }
 p
 {
@@ -97,14 +105,18 @@ section
     -webkit-border-image: url(bottom1.png) 33 370 repeat;
     border-image: url(bottom1.png) 33 370 repeat;
 }
-.articles > article
+.articles article > .article
 {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     column-count: 2;
 }
+.articles article > .article p:nth-of-type(1)
+{
+    margin-top: 0;
+}
 
-article p:first-child::first-letter
+.article p:first-child::first-letter
 {
     font-family: 'Lobster', cursive;
     font-size: 30px;
@@ -245,16 +257,29 @@ footer
 {
     font-size: 26px;
 }
+figcaption
+{
+    font-family: 'Marck Script', cursive;
+    font-size: 14px;
+}
+header
+{
+    column-count: 1;
+}
+
 
 /*Здесь, при переносе скобки, начинает ругаться редактор*/
 @media all and (max-width: 800px) {
     .articles
     {
         width: calc(100vw - 30px);
-        min-width: 0;
+    }
+    .articles article > .article
+    {
         -moz-column-count: 1;
         -webkit-column-count: 1;
         column-count: 1;
+        min-width: 0;
     }
     .mainArticle
     {
