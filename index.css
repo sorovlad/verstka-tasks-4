@@ -40,20 +40,21 @@ p
 }
 .curentTime
 {
+    display: block;
     font-family: 'Marck Script', cursive;
     font-size: 24px;
     text-align: center;
     border-bottom: 22px solid transparent;
-    -moz-border-image: url("top.png") 568 30 repeat;
-    -webkit-border-image: url("top.png") 568 30 repeat;
-    border-image: url("top.png") 568 30 repeat;
+    -moz-border-image: url(top.png) 568 30 repeat;
+    -webkit-border-image: url(top.png) 568 30 repeat;
+    border-image: url(top.png) 568 30 repeat;
 }
 
 section
 {
     display: block;
 }
-.wraper
+.wrapper
 {
     display: flex;
     justify-content: space-around;
@@ -61,9 +62,9 @@ section
 
     padding-bottom: 7px;
     border-bottom: 20px solid transparent;
-    -moz-border-image: url("bottom2.png") 18 200 repeat;
-    -webkit-border-image: url("bottom2.png") 18 200 repeat;
-    border-image: url("bottom2.png") 18 200 repeat;
+    -moz-border-image: url(bottom2.png) 18 200 repeat;
+    -webkit-border-image: url(bottom2.png) 18 200 repeat;
+    border-image: url(bottom2.png) 18 200 repeat;
 }
 
 .mainArticle
@@ -92,9 +93,9 @@ section
     padding-left: 7px;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    -moz-border-image: url("bottom1.png") 33 370 repeat;
-    -webkit-border-image: url("bottom1.png") 33 370 repeat;
-    border-image: url("bottom1.png") 33 370 repeat;
+    -moz-border-image: url(bottom1.png) 33 370 repeat;
+    -webkit-border-image: url(bottom1.png) 33 370 repeat;
+    border-image: url(bottom1.png) 33 370 repeat;
 }
 .articles > article
 {
@@ -141,17 +142,17 @@ footer
     text-align: center;
     font-size: 20px;
     border-top: 12px solid transparent;
-    -moz-border-image: url("bottom2.png") 270 20 repeat;
-    -webkit-border-image: url("bottom2.png") 270 20 repeat;
-    border-image: url("bottom2.png") 270 20 repeat;
+    -moz-border-image: url(bottom2.png) 270 20 repeat;
+    -webkit-border-image: url(bottom2.png) 270 20 repeat;
+    border-image: url(bottom2.png) 270 20 repeat;
 }
 .headNato
 {
     border-top: 12px solid transparent;
     margin-top: 20px;
-    -moz-border-image: url("top2.png") 270 20 repeat;
-    -webkit-border-image: url("top2.png") 270 20 repeat;
-    border-image: url("top2.png") 270 20 repeat;
+    -moz-border-image: url(top2.png) 270 20 repeat;
+    -webkit-border-image: url(top2.png) 270 20 repeat;
+    border-image: url(top2.png) 270 20 repeat;
 }
 .issue
 {
@@ -173,85 +174,84 @@ footer
     width: 30px;
 }
 
-.blackTheme:checked ~ .wraper
+#blackTheme:checked ~ .wrapper
 {
-    background: url("background.png") center top no-repeat;
+    background: url(background.png) center top no-repeat;
     background-color: #000;  
 }
-.blackTheme:checked ~ .wraper p,
-.blackTheme:checked ~ .wraper .curentTime
+#blackTheme:checked ~ .wrapper p,
+#blackTheme:checked ~ .wrapper .curentTime
 {
     color: #FFD700;
 }
-.blackTheme:checked ~ .wraper q
+#blackTheme:checked ~ .wrapper q
 {
     color:  #FFA500;
 }
-.blackTheme:checked ~ .wraper h2
+#blackTheme:checked ~ .wrapper h2
 {
     color: #F4A460
 } 
-.blackTheme:checked ~ .wraper h1
+#blackTheme:checked ~ .wrapper h1
 {
     color: #FFFACD;
     text-shadow: 4px 4px rgba(255 , 250 , 205, .4);
 } 
 
-.whiteTheme:checked ~ .wraper
+#whiteTheme:checked ~ .wrapper
 {
     background-color: #fff8dc;
-    background: url("background.png") center top no-repeat,
-    url('paper_texture.jpg') 0 0 repeat;
+    background: url(background.png) center top no-repeat,
+    url(paper_texture.jpg) 0 0 repeat;
 }
 
-.bigFont:checked ~ .wraper p
+#bigFont:checked ~ .wrapper p
 {
     font-size: 24px;
 }
-.bigFont:checked ~ .wraper .mainArticle h2
+#bigFont:checked ~ .wrapper .mainArticle h2
 {
     font-size: 34px;
 }
-.bigFont:checked ~ .wraper q
+#bigFont:checked ~ .wrapper q
 {
     font-size: 24px;
 }
-.bigFont:checked ~ .wraper h2
+#bigFont:checked ~ .wrapper h2
 {
     font-size: 26px;
 }
-.bigFont:checked ~ .wraper article p:first-child::first-letter
+#bigFont:checked ~ .wrapper article p:first-child::first-letter
 {
     font-size: 34px;
 }
-.smallFont:checked ~ .wraper p
+#smallFont:checked ~ .wrapper p
 {
     font-size: 16px;
 }
-.smallFont:checked ~ .wraper .mainArticle h2
+#smallFont:checked ~ .wrapper .mainArticle h2
 {
     font-size: 26px;
 }
-.smallFont:checked ~ .wraper q
+#smallFont:checked ~ .wrapper q
 {
     font-size: 16px;
 }
-.smallFont:checked ~ .wraper h2
+#smallFont:checked ~ .wrapper h2
 {
     font-size: 20px;
 }
-.smallFont:checked ~.wraper article p:first-child::first-letter
+#smallFont:checked ~.wrapper article p:first-child::first-letter
 {
     font-size: 26px;
 }
-
 
 /*Здесь, при переносе скобки, начинает ругаться редактор*/
 @media all and (max-width: 800px) {
     .articles
     {
         width: calc(100vw - 30px);
-        min-width: 0px;
+        min-width: 0;
         -moz-column-count: 1;
         -webkit-column-count: 1;
         column-count: 1;
@@ -259,7 +259,7 @@ footer
     .mainArticle
     {
         width: calc(100vw - 30px);
-        min-width: 0px;
+        min-width: 0;
     }
     .rightColomn
     {
